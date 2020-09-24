@@ -1,0 +1,2 @@
+# KohLantStats
+Koh Lanta Stats
