@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.minuteproject.ms</groupId>
+	<artifactId>game_score-db</artifactId>
+	<version>0.8.3</version>
+
+    <name>game_score DB</name>
+
+	<properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <flyway.version>5.2.1</flyway.version>
+    </properties>
+
+	<dependencies>
+	<!-- Logging to console with slf4j and logback-classic -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.5</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.0.13</version>
+		</dependency>
+		<dependency>
+			<groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+            <version>${flyway.version}</version>
+		</dependency>
+	</dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-maven-plugin</artifactId>
+                <version>${flyway.version}</version>
+                <configuration>
+					<configFile>src/main/resources/game-score/config/${db.env}-config.properties</configFile>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.h2database</groupId>
+                        <artifactId>h2</artifactId>
+                        <version>1.3.173</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>mysql</groupId>
+                        <artifactId>mysql-connector-java</artifactId>
+                        <!--<version>6.0.6</version>        not working with mysql 8 query_cache_size error -->
+                        <version>8.0.11</version>        
+                    </dependency>    
+                </dependencies>
+            </plugin>
+        </plugins>
+    </build>
+
+	<profiles>
+		<profile>
+	        <id>local</id>
+	        <activation>
+              <activeByDefault>true</activeByDefault>
+            </activation>
+	        <properties>
+	            <db.env>local</db.env>
+	        </properties>
+	    </profile>
+	    <profile>
+	        <id>local-docker-network</id>
+	        <properties>
+	            <db.env>local-docker-network</db.env>
+	        </properties>
+	    </profile>
+		<profile>
+	        <id>ci</id>
+	        <properties>
+	            <db.env>ci</db.env>
+	        </properties>
+	    </profile>
+	    <profile>
+	        <id>game_score-jenkins</id>
+	        <properties>
+	            <db.env>game_score-jenkins</db.env>
+	        </properties>
+	    </profile>
+	    <profile>
+	        <id>proto</id>
+	        <properties>
+	            <db.env>proto</db.env>
+	        </properties>
+	    </profile>
+	    <profile>
+	        <id>demo</id>
+	        <properties>
+	            <db.env>demo</db.env>
+	        </properties>
+	    </profile>
+	    <profile>
+	        <id>prod</id>
+	        <properties>
+	            <db.env>prod</db.env>
+	        </properties>
+	    </profile>
+	    <profile>
+	        <id>acc_up</id>
+	        <properties>
+	            <db.env>acc_up</db.env>
+	        </properties>
+	    </profile>
+	</profiles>
+</project>
