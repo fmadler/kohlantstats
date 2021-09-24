@@ -48,13 +48,13 @@ call team_game_ranking ('jaune-2021-2','paresseux-2021-2',1);
 call create_game('la-legende-2021','Relais aquatique','relais-aquatique-2021','relais-aquatique','equipe','immunite',10,10,'totem','apnee,rapidite,natation');
 
 
-call create_game_participation('claude-2010','jaune-2021-2','relais-aquatique-2021','participant','collectif',2,'totem');
-call create_game_participation('coumba-2010','jaune-2021-2','relais-aquatique-2021','participant','collectif',2,'totem');
-call create_game_participation('sam-2018','jaune-2021-2','relais-aquatique-2021','participant','collectif',2,'totem');
-call create_game_participation('phil-2012','jaune-2021-2','relais-aquatique-2021','participant','collectif',2,'totem');
-call create_game_participation('christelle-2008','jaune-2021-2','relais-aquatique-2021','participant','collectif',2,'totem');
-call create_game_participation('clemence-2005','jaune-2021-2','relais-aquatique-2021','participant','collectif',2,'totem');
-call create_game_participation('candice-2016','jaune-2021-2','relais-aquatique-2021','participant','collectif',2,'totem');
+call create_game_participation('claude-2010','jaune-2021-2','relais-aquatique-2021','participant','collectif',1,'totem');
+call create_game_participation('coumba-2010','jaune-2021-2','relais-aquatique-2021','participant','collectif',1,'totem');
+call create_game_participation('sam-2018','jaune-2021-2','relais-aquatique-2021','participant','collectif',1,'totem');
+call create_game_participation('phil-2012','jaune-2021-2','relais-aquatique-2021','participant','collectif',1,'totem');
+call create_game_participation('christelle-2008','jaune-2021-2','relais-aquatique-2021','participant','collectif',1,'totem');
+call create_game_participation('clemence-2005','jaune-2021-2','relais-aquatique-2021','participant','collectif',1,'totem');
+call create_game_participation('candice-2016','jaune-2021-2','relais-aquatique-2021','participant','collectif',1,'totem');
 
 call create_program_game_participation('la-legende-2021','loic-2020','rouge-2021-2','relais-aquatique-2021','participant','collectif',2,'');
 call create_game_participation('teheiura-2011','rouge-2021-2','relais-aquatique-2021','participant','collectif',2,'');

@@ -18,8 +18,8 @@ call create_participant_departure('la-legende-2021','cindy-2019','ile-des-bannis
 -- toto dissolution des équipes
 --
 -- todo vérifier les noms
-call create_team('la-legende-2021','Korok','jaune-2021-2','Jaune',7,15);
-call create_team('la-legende-2021','Lanta naï','rouge-2021-2','Rouge',7,15);
+call create_team('la-legende-2021','Lanta naï','jaune-2021-2','Jaune',7,15);
+call create_team('la-legende-2021','Korok','rouge-2021-2','Rouge',7,15);
 
 call create_participant_entrance ('la-legende-2021','coumba-2010','jaune-2021',1,'constitution-des-equipes', @participant_team_id);
 call create_participant_entrance ('la-legende-2021','clemence-2005','jaune-2021-2',1,'constitution-des-equipes', @participant_team_id);
@@ -100,7 +100,7 @@ call create_participant_realisation ('la-legende-2021','clemence-2005','jaune-20
 call team_game_ranking ('rouge-2021-2','le-grand-bleu-2021',1);
 call team_game_ranking ('jaune-2021-2','le-grand-bleu-2021',2);
 
---todo decouverte de collier par clémence
+-- todo decouverte de collier par clémence
 
 /*
 call first_vote_against ('la-legende-2021','alexandra-2020','cindy-2019','rouge-2021-2', 6, 'effectif');
