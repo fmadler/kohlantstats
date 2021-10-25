@@ -1,6 +1,6 @@
 INSERT INTO `GS_REWARD` (`NAME`, `WEB_PATH`, `GS_REWARD_TYPE_ID`, `IS_POSITIVE`) VALUES ('Nourriture : riz', 'nourriture-riz', 5, 1);
 
-call create_game('les-armes-secretes','Puzzle construction gouttière','puzzle-gouttiere-2021','puzzle','collectif','confort',9,13,'nourriture-riz,conseil','logic,rapidite,precision');
+call create_game('les-armes-secretes','Puzzle construction gouttière','puzzle-gouttiere-2021','puzzle','collectif','confort',9,13,'nourriture-riz,conseil','logique,rapidite,precision');
 
 call create_game_participation('herve-2021','rouge-2021','puzzle-gouttiere-2021','participant','collectif',2,'conseil');
 call create_game_participation('jonathan-2021','rouge-2021','puzzle-gouttiere-2021','participant','collectif',2,'conseil');
@@ -34,7 +34,7 @@ call first_vote_against ('les-armes-secretes','jonathan-2021','magali-2021','rou
 
 call create_participant_departure ('les-armes-secretes','magali-2021','rouge-2021',13,'exclusion-par-vote', @participant_team_id);
 
-call create_game('les-armes-secretes','Paresseux','paresseux-2021','paresseux','collectif','immunite',10,14,'','force,static,patience,mental');
+call create_game('les-armes-secretes','Paresseux','paresseux-2021','paresseux','collectif','immunite',10,14,'','force,statique,patience,mental');
 
 -- todo gabin infirmerie
 

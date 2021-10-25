@@ -121,5 +121,20 @@ begin
 -- _vote_number 2 sequence 1
 	call vote (_program_web_path, _voter_web_path, _voter_target_web_path, _team_web_path, 2, _time_unit, 1, _vote_effectiveness_type_web_path, 'vote-contre');
 end$$
-delimiter ;
+delimiter $$
+drop procedure IF EXISTS second_round_first_vote_for$$
+create procedure second_round_first_vote_for
+(
+    _program_web_path varchar(100),
+    _voter_web_path varchar(100),
+    _voter_target_web_path varchar(100),
+    _team_web_path varchar(100),
+    _time_unit int,
+    _vote_effectiveness_type_web_path varchar(100)
+)
+begin
+  --    call first_vote (_program_web_path, _voter_web_path, _voter_target_web_path, _team_web_path, _time_unit, _vote_effectiveness_type_web_path, 'vote-pour');
+            call vote (_program_web_path, _voter_web_path, _voter_target_web_path, _team_web_path, 1, _time_unit, 2, _vote_effectiveness_type_web_path, 'vote-pour');
 
+end$$
+delimiter ;

@@ -12,48 +12,48 @@ call create_programme('Malaisie', 'mailaisie-2012', '2012', 11, 40, 'malaisie', 
 call create_programme('L''ïle au trésor', 'l-ile-au-tresor-2016', '2016', 17, 40, 'malaisie', 'Malaisie', 0); 
 call create_programme('La guerre des chefs', 'la-guerre-des-chefs-2019', '2019', 19, 40, 'malaisie', 'Malaisie', 0); 
 
-call add_participant('la-legende-2021', 'Claude', '42', 'claude-2010', 'M', null, null, 0, '', '');
+call add_participant('la-legende-2021', 'Claude', 'Dartois', 'claude-2010', 'M', 42, null, 0, '', '');
 -- Dartois
 
-call add_participant('la-legende-2021', 'Coumba', '39', 'coumba-2010', 'F', null, null, 0, '', '');
+call add_participant('la-legende-2021', 'Coumba', '', 'coumba-2010', 'F', 39, null, 0, '', '');
 -- Baradji
 
-call add_participant('la-legende-2021', 'Ugo', '40', 'ugo-2012', 'M', null, null, 0, '', '');
+call add_participant('la-legende-2021', 'Ugo', '', 'ugo-2012', 'M', 40, null, 0, '', '');
 -- lartiche
 
-call add_participant('la-legende-2021', 'Clemence', '36', 'clemence-2005', 'F', null, null, 0, '', '');
+call add_participant('la-legende-2021', 'Clemence', '', 'clemence-2005', 'F', 36, null, 0, '', '');
 -- Castel
 
-call add_participant('la-legende-2021', 'Jade', '39', 'jade-2007', 'M', null, null, 0, '', '');
+call add_participant('la-legende-2021', 'Jade', '', 'jade-2007', 'M', 39, null, 0, '', '');
 -- Handi
-call add_participant('la-legende-2021', 'Karima', '26', 'karima-2016', 'F', null, null, 17, '', 'Militaire');
+call add_participant('la-legende-2021', 'Karima', '', 'karima-2016', 'F', 26, null, 17, '', 'Militaire');
 -- Najjarine
-call add_participant('la-legende-2021', 'Teheiura', '43', 'teheiura-2011', 'F', null, null, 0, '', '');
+call add_participant('la-legende-2021', 'Teheiura', '', 'teheiura-2011', 'F', 43, null, 0, '', '');
 -- teahui
-call add_participant('la-legende-2021', 'Patrick', '51', 'patrick-2009', 'M', null, null, 19, '', '');
+call add_participant('la-legende-2021', 'Patrick', '', 'patrick-2009', 'M', 51, null, 19, '', '');
 -- Merle 
-call add_participant('la-legende-2021', 'Alix', '28', 'alix-2020', 'M', null, null, 0, '', '');
+call add_participant('la-legende-2021', 'Alix', '', 'alix-2020', 'M', 28, null, 0, '', '');
 -- Noblat
-call add_participant('la-legende-2021', 'Alexandra', '25', 'alexandra-2020', 'F', null, null, 0, '', '');
+call add_participant('la-legende-2021', 'Alexandra', '', 'alexandra-2020', 'F', 25, null, 0, '', '');
 -- pornet
-call add_participant('la-legende-2021', 'Sam', '44', 'sam-2018', 'F', null, null, 0, '', '');
+call add_participant('la-legende-2021', 'Sam', '', 'sam-2018', 'F', 44, null, 0, '', '');
 -- haliti
-call add_participant('la-legende-2021', 'Christelle', '41', 'christelle-2008', 'M', null, null, 0, '', '');
+call add_participant('la-legende-2021', 'Christelle', '', 'christelle-2008', 'M', 41, null, 0, '', '');
 -- Gauzet  
-call add_participant('la-legende-2021', 'Candice', '24', 'candice-2016', 'F', null, null, 0, '', '');
+call add_participant('la-legende-2021', 'Candice', '', 'candice-2016', 'F', 24, null, 15, '', '');
 -- Boisson 
-call add_participant('la-legende-2021', 'Clémentine', '29', 'clementine-2017', 'F', null, null, 0, '', '');
+call add_participant('la-legende-2021', 'Clémentine', '', 'clementine-2017', 'F', 29, null, 14, '', '');
 -- jullien
-call add_participant('la-legende-2021', 'Cindy', '33', 'cindy-2019', 'F', null, null, 19, '', '');
+call add_participant('la-legende-2021', 'Cindy', '', 'cindy-2019', 'F', 33, null, 19, '', '');
 -- Poumeyrol 
-call add_participant('la-legende-2021', 'Freddy', '36', 'freddy-2010', 'M', null, null, 20, '', '');
+call add_participant('la-legende-2021', 'Freddy', '', 'freddy-2010', 'M', 36, null, 20, '', '');
 -- boucher
-call add_participant('la-legende-2021', 'Laurent', '39', 'laurent-2011', 'F', null, null, 0, '', '');
-call add_participant('la-legende-2021', 'Phil', '26', 'phil-2012', 'F', null, null, 0, '', '');
+call add_participant('la-legende-2021', 'Laurent', '', 'laurent-2011', 'M', 39, null, 0, '', '');
+call add_participant('la-legende-2021', 'Phil', '', 'phil-2012', 'M', null, null, 0, '', '');
 -- bizet
-call add_participant('la-legende-2021', 'Maxime', '34', 'maxime-2019', 'M', null, null, 0, '', '');
+call add_participant('la-legende-2021', 'Maxime', '', 'maxime-2019', 'M', 34, null, 16, '', '');
 -- berthon
-call add_participant('la-legende-2021', 'Namadia', '38', 'namadia-2012', 'M', null, null, 0, '', 'Elageur');
+call add_participant('la-legende-2021', 'Namadia', '', 'namadia-2012', 'M', 38, null, 0, '', '');
 -- berthon
 /*
 */

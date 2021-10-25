@@ -1,6 +1,6 @@
 INSERT INTO `GS_REWARD` (`NAME`, `WEB_PATH`, `GS_REWARD_TYPE_ID`, `IS_POSITIVE`) VALUES ('Comme à la maison', 'comme-a-la-maison', 5, 1);
 
-call create_game('les-armes-secretes','Koala à deux','koala-a-deux-2021','koala','binome','confort',17,24,'comme-a-la-maison','statique,equilibre');
+call create_game('les-armes-secretes','Koala à deux','koala-a-deux-2021','koala','binome','confort',17,24,'comme-a-la-maison','statique,equilibre,endurance,resistance');
 
 call create_game_participation('jonathan-2021','blanc-2021','koala-a-deux-2021','participant','binome',2,'comme-a-la-maison');
 call create_game_participation('magali-2021','blanc-2021','koala-a-deux-2021','participant','binome',2,'comme-a-la-maison');

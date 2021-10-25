@@ -11,7 +11,7 @@ call create_participant_departure('les-armes-secretes','laure-2021','blanc-2021'
 
 
 -- 2 
-call create_game('les-armes-secretes','Poteaux','poteaux-2021','poteaux','individuel','finale',24,35,@participant_team_id,'equilibre');
+call create_game('les-armes-secretes','Poteaux','poteaux-2021','poteaux','individuel','finale',24,35,@participant_team_id,'equilibre,statique,patience');
 
 call create_game_participation('jonathan-2021','blanc-2021','poteaux-2021','participant','individuel',3,'');
 call create_game_participation('maxine-2021','blanc-2021','poteaux-2021','participant','individuel',1,'');
@@ -32,4 +32,5 @@ call first_vote_for ('les-armes-secretes','mathieu-2021','maxine-2021','blanc-20
 call first_vote_for ('les-armes-secretes','herve-2021','lucie-2021','blanc-2021', 35, 'effectif');
 call first_vote_for ('les-armes-secretes','frederic-2021','lucie-2021','blanc-2021', 35, 'effectif');
 
-
+call create_participant_departure('les-armes-secretes','maxine-2021','blanc-2021',35,'deliberation-jury-final', @participant_team_id);
+call create_participant_departure('les-armes-secretes','lucie-2021','blanc-2021',35,'deliberation-jury-final', @participant_team_id);

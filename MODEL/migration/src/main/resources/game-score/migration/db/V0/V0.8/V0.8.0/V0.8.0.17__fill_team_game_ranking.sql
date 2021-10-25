@@ -79,3 +79,6 @@ call team_game_ranking ('blanc-2020','labyrinthe-2020',1);
 call team_game_ranking ('blanc-2020','orientation-2020',1);
 
 call team_game_ranking ('blanc-2020','poteaux-2020',1);
+
+
+INSERT INTO `GS_TEAM_DEPARTURE_TYPE` (`NAME`, `WEB_PATH`) VALUES ('Délibération du jury final', 'deliberation-jury-final');

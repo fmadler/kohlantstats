@@ -11,6 +11,7 @@ call create_participant_entrance ('la-legende-2021','alexandra-2020','arrivee-fe
 call create_participant_entrance ('la-legende-2021','christelle-2008','arrivee-femme-2021',1,'constitution-des-equipes', @participant_team_id);
 call create_participant_entrance ('la-legende-2021','candice-2016','arrivee-femme-2021',1,'constitution-des-equipes', @participant_team_id);
 call create_participant_entrance ('la-legende-2021','clementine-2017','arrivee-femme-2021',1,'constitution-des-equipes', @participant_team_id);
+call create_participant_entrance ('la-legende-2021','jade-2007','arrivee-femme-2021',1,'constitution-des-equipes', @participant_team_id);
 
 
 call create_participant_entrance ('la-legende-2021','freddy-2010','arrivee-homme-2021',1,'constitution-des-equipes', @participant_team_id);

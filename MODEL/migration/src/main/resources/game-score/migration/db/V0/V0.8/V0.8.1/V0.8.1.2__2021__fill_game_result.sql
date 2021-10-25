@@ -1,5 +1,5 @@
 -- parcours-feu 
-call create_game('les-armes-secretes','Parcours feu','parcours-feu-2021','parcours-feu','collectif','selection-initiale',1,1,'vote-contre-soi',null);
+call create_game('les-armes-secretes','Parcours feu','parcours-feu-2021','parcours-feu','collectif','selection-initiale',1,1,'vote-contre-soi','parcours,coordination,rapidite');
 
 call create_game_participation('candice-2021','arrivee-2021','parcours-feu-2021','participant','binome',1,'chef-equipe,talisman');
 call create_game_participation('herve-2021','arrivee-2021','parcours-feu-2021','participant','binome',1,'chef-equipe,talisman');
@@ -41,7 +41,7 @@ jaune : aurelien, laetitia, thomas, myriam vincent flavio shanice mathieu sylvia
 jeu : equilibre-entre-platforme jour 2
 -- 
 */
-call create_game('les-armes-secretes','Equilibre entre plateformes','equilibre-entre-plateformes-2021','equilibre-entre-plateformes','collectif','immunite',2,2,null,null);
+call create_game('les-armes-secretes','Equilibre entre plateformes','equilibre-entre-plateformes-2021','equilibre-entre-plateformes','collectif','immunite',2,2,null,'equilibre,coordination');
 
 call create_game_participation('candice-2021','rouge-2021','equilibre-entre-plateformes-2021','participant','collectif',1,'totem');
 call create_game_participation('herve-2021','rouge-2021','equilibre-entre-plateformes-2021','participant','collectif',1,'totem');

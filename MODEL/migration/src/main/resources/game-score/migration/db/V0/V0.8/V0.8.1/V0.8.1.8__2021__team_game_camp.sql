@@ -1,6 +1,6 @@
 INSERT INTO `GS_REWARD` (`NAME`, `WEB_PATH`, `GS_REWARD_TYPE_ID`, `IS_POSITIVE`) VALUES ('Nourriture : riz', 'nourriture-poulet-frites', 5, 1);
 
-call create_game('les-armes-secretes','Malle Puzzle','malle-puzzle-2021','puzzle','collectif','confort',11,16,'nourriture-riz,conseil','logic,rapidite,natation,relais');
+call create_game('les-armes-secretes','Malle Puzzle','malle-puzzle-2021','puzzle','collectif','confort',11,16,'nourriture-riz,conseil','logique,rapidite,natation,relais');
 
 call create_game_participation('herve-2021','rouge-2021','malle-puzzle-2021','participant','collectif',1,'conseil');
 call create_game_participation('jonathan-2021','rouge-2021','malle-puzzle-2021','participant','collectif',1,'conseil');
