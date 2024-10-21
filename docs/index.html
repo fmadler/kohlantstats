@@ -1,1 +1,109 @@
-<h1>KLS docs</h1>
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+    <!-- Presentation container -->
+    <div class="reveal">
+        <div class="slides">
+            <!-- First Slide -->
+            <section>
+                <h2>Welcome to Reveal.js Presentation</h2>
+                <p>This slide is written using markdown syntax.</p>
+            </section>
+
+			<section>
+                <h2>XML Code Example</h2>
+                <pre><code class="xml">
+&lt;note&gt;
+  &lt;to&gt;Alice&lt;/to&gt;
+  &lt;from&gt;Bob&lt;/from&gt;
+  &lt;heading&gt;Reminder&lt;/heading&gt;
+  &lt;body&gt;Don't forget our meeting tomorrow!&lt;/body&gt;
+&lt;/note&gt;
+                </code></pre>
+            </section>
+
+            <!-- Slide with XML code -->
+			<section data-include="section1.html"></section>
+
+            <!-- Another markdown slide -->
+            <section data-markdown>
+                ## Markdown with Code
+                Here is an example of some code in markdown:
+                
+                ```javascript showLineNumbers
+                function helloWorld() {
+                    console.log("Hello, world!");
+                }
+                ```
+			</section>
+			<section data-markdown>
+				<h2>XML Code Example 22</h2>
+				```xml
+			&lt;note&gt;
+			&lt;to&gt;Alice!!&lt;/to&gt;
+			&lt;from&gt;Bob&lt;/from&gt;
+			&lt;heading&gt;Reminder&lt;/heading&gt;
+			&lt;body&gt;Don't forget our meeting tomorrow!&lt;/body&gt;
+			&lt;/note&gt;
+		
+			</section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="position:fixed; bottom:0; width:100%; text-align:center;">
+        <p>Created by Your Name | Reveal.js Presentation | 2024</p>
+    </footer>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			function loadExternalSlides() {
+				const sections = document.querySelectorAll('[data-include]');
+
+				sections.forEach(async (section) => {
+					const file = section.getAttribute('data-include');
+					const response = await fetch(file);
+					const content = await response.text();
+					section.innerHTML = content;
+				});
+
+				// Wait for all content to load, then reinitialize Reveal.js
+				Promise.all(sections).then(() => {
+					// Re-initialize Reveal.js after content is loaded
+					Reveal.sync(); // Sync slides with loaded content
+				});
+			}
+			// Then load external slides
+			loadExternalSlides();
+			// Initialize Reveal.js first
+			Reveal.initialize({
+					hash: true,
+
+					// Learn about plugins: https://revealjs.com/plugins/
+					plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				});
+
+
+
+		</script>
+	</body>
+</html>
